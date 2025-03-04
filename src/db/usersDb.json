@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "93e55f29-e76b-4266-b81b-ab1513707b8d",
+    "username": "Ralph",
+    "email": "ralphy@mail.bg",
+    "password": "$2b$10$BZ7WaGnVhYv1IuBmxDOoj.KzcHotf1bqZXUQDfykbBji9uVf889Fy"
+  },
+  {
+    "_id": "e084561f-2674-4a86-b50c-f213fabaa449",
+    "username": "Rick",
+    "email": "rick@mail.bg",
+    "password": "$2b$10$SRZxb6fqA2hTgO58U1dLB.JTqBHMg1Drur/FB/pwmmT6hHyZyWzUG"
+  },
+  {
+    "_id": "11d45e42-92e8-4b41-abe9-f291751990f5",
+    "username": "Morty",
+    "email": "morty@mail.bg",
+    "password": "$2b$10$cUXOFHDUdRxe.6VeXWS8FeBLCn0hOCSwDSEfWq5NWvhN3mGYuDsOS"
+  }
+]

@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "dc48b35f-1ee8-498e-86c3-627f0a73813e",
+		"name": "dg-private-api-requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42557390"
+	},
+	"item": [
+		{
+			"name": "getAllUsers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiOTNlNTVmMjktZTc2Yi00MjY2LWI4MWItYWIxNTEzNzA3YjhkIiwiaWF0IjoxNzQxMTExOTU2LCJleHAiOjE3NDExMTU1NTZ9.eUaV3PY7msO7_3pKIXlSZfY79YkMfwFHwdZJPbod7RI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/private",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"private"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiOTNlNTVmMjktZTc2Yi00MjY2LWI4MWItYWIxNTEzNzA3YjhkIiwiaWF0IjoxNzQxMTExOTU2LCJleHAiOjE3NDExMTU1NTZ9.eUaV3PY7msO7_3pKIXlSZfY79YkMfwFHwdZJPbod7RI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Morty\",\n    \"email\": \"morty@mail.bg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/private/24bc18af-124f-4772-b4cb-ee1b546e818d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"private",
+						"24bc18af-124f-4772-b4cb-ee1b546e818d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiOTNlNTVmMjktZTc2Yi00MjY2LWI4MWItYWIxNTEzNzA3YjhkIiwiaWF0IjoxNzQxMTExOTU2LCJleHAiOjE3NDExMTU1NTZ9.eUaV3PY7msO7_3pKIXlSZfY79YkMfwFHwdZJPbod7RI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/private/a0df09e9-cfda-494a-811a-5f00898191e1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"private",
+						"a0df09e9-cfda-494a-811a-5f00898191e1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ownSpace",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiOTNlNTVmMjktZTc2Yi00MjY2LWI4MWItYWIxNTEzNzA3YjhkIiwiaWF0IjoxNzQxMTExOTU2LCJleHAiOjE3NDExMTU1NTZ9.eUaV3PY7msO7_3pKIXlSZfY79YkMfwFHwdZJPbod7RI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"ralphy@mail.bg\",\n    \"password\": \"d2$qLpWEeVx\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/private/93e55f29-e76b-4266-b81b-ab1513707b8d/my-space",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"private",
+						"93e55f29-e76b-4266-b81b-ab1513707b8d",
+						"my-space"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dailyTask",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiOTNlNTVmMjktZTc2Yi00MjY2LWI4MWItYWIxNTEzNzA3YjhkIiwiaWF0IjoxNzQxMTExOTU2LCJleHAiOjE3NDExMTU1NTZ9.eUaV3PY7msO7_3pKIXlSZfY79YkMfwFHwdZJPbod7RI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/private/my-space",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"private",
+						"my-space"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
